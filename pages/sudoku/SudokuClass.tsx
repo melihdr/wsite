@@ -89,7 +89,7 @@ class Sudoku {
 }
 
 function SudokuClass() {
-  const [sudoku, setSudoku] = useState(new Sudoku());
+  const sudoku = new Sudoku();
   const [board, setBoard] = useState(sudoku.board);
 
   const emptyArray = Array(9)
