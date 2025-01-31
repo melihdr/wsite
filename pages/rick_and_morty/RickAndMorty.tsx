@@ -2,7 +2,7 @@ import { getRickAndMortyCharacters } from "@/utils/actions";
 import React from "react";
 
 function RickAndMorty() {
-  const { data, loading, error } = getRickAndMortyCharacters();
+  const { data, loading } = getRickAndMortyCharacters();
 
   if (loading) return <div>Loading...</div>;
 

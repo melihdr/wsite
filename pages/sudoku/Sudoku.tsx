@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 
 function isSafe(mat: number[][], row: number, col: number, num: number) {
   // check if num exists in the row or column
@@ -47,26 +47,6 @@ function removeCells(removedBoard: number[][], emptyCells: number) {
   }
 
   return removedBoard;
-}
-
-function solveSudokuRec(mat: number[][], row: number, col: number) {
-  if (row === 8 && col === 9) return true;
-
-  if (col === 9) {
-    row++;
-    col = 0;
-  }
-
-  if (mat[row][col] !== 0) return solveSudokuRec(mat, row, col + 1);
-
-  for (let num = 1; num <= 9; num++) {
-    if (isSafe(mat, row, col, num)) {
-      mat[row][col] = num;
-      if (solveSudokuRec(mat, row, col + 1)) return mat;
-      mat[row][col] = 0;
-    }
-  }
-  return false;
 }
 
 function Sudoku() {

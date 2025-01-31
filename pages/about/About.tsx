@@ -4,8 +4,8 @@ function About() {
   return (
     <>
       <div>
-        hi, i'm melih durmus, an electrical engineer student currently living in
-        ankara.
+        hi, i am melih durmus, an electrical engineer student currently living
+        in ankara.
       </div>
     </>
   );

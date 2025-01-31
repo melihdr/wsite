@@ -6,11 +6,9 @@ import Astronomy from "@/pages/astronomy/Astronomy";
 import ProfileImage from "@/components/ProfileImage";
 import About from "@/pages/about/About";
 import Book from "@/pages/book/Book";
-import { Separator } from "@radix-ui/react-separator";
 import SpaceX from "@/pages/spacex/SpaceX";
 import Navbar from "@/components/Navbar";
 import RickAndMorty from "@/pages/rick_and_morty/RickAndMorty";
-import Sudoku from "@/pages/sudoku/Sudoku";
 import SudokuClass from "@/pages/sudoku/SudokuClass";
 
 function HomePage() {
