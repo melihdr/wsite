@@ -2,6 +2,7 @@
 
 import React from "react";
 import { getSpaceXRockets } from "@/utils/actions";
+import Image from "next/image";
 
 function SpaceX() {
   const { data, loading, error } = getSpaceXRockets();
@@ -18,7 +19,7 @@ function SpaceX() {
               <p className="font-bold">{rocket.rocket_name}</p>
               <p>{rocket.description}</p>
               <p>cost per launch: {rocket.cost_per_launch}$</p>
-              <img src={rocket.flickr_images[0]} alt="rocket image" />
+              <Image src={rocket.flickr_images[0]} alt="rocket image" />
             </div>
           );
         })

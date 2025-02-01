@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 import UseFetchNASAData from "@/utils/useFetchNASAData";
 import { AiOutlineCopyright } from "react-icons/ai";
@@ -15,7 +16,7 @@ function Astronomy() {
       <h1 className="font-bold mb-3 text-2xl">Astronomy Picture of the Day</h1>
       <h1 className="font-bold">{data?.title}</h1>
       <p>{data?.explanation}</p>
-      {data?.media_type === "image" && <img src={data.url} />}
+      {data?.media_type === "image" && <Image src={data.url} alt="image" />}
       <p>
         <AiOutlineCopyright className="inline" />
         {data?.copyright}

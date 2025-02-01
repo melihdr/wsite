@@ -39,7 +39,7 @@ class Sudoku {
     const numbers = Array.from({ length: 9 }, (_, i) => i + 1).sort(
       () => Math.random() - 0.5
     );
-    for (let num of numbers) {
+    for (const num of numbers) {
       if (this.isSafe(mat, row, col, num)) {
         mat[row][col] = num;
         if (this.fillBoard(mat, row, col + 1)) return mat;

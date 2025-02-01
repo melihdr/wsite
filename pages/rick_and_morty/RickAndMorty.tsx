@@ -1,5 +1,6 @@
 import { getRickAndMortyCharacters } from "@/utils/actions";
 import React from "react";
+import Image from "next/image";
 
 function RickAndMorty() {
   const { data, loading } = getRickAndMortyCharacters();
@@ -16,7 +17,7 @@ function RickAndMorty() {
           data.map((character) => {
             return (
               <div key={character.id}>
-                <img src={character.image} alt="image" />
+                <Image src={character.image} alt="image" />
                 <div className="flex justify-center gap-5">
                   <p>{character.name}</p>
                   <p>{character.status}</p>
