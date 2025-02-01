@@ -17,7 +17,12 @@ function RickAndMorty() {
           data.map((character) => {
             return (
               <div key={character.id}>
-                <Image src={character.image} alt="image" />
+                <Image
+                  src={character.image}
+                  alt="image"
+                  width={100}
+                  height={100}
+                />
                 <div className="flex justify-center gap-5">
                   <p>{character.name}</p>
                   <p>{character.status}</p>

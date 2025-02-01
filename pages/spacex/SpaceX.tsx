@@ -19,7 +19,12 @@ function SpaceX() {
               <p className="font-bold">{rocket.rocket_name}</p>
               <p>{rocket.description}</p>
               <p>cost per launch: {rocket.cost_per_launch}$</p>
-              <Image src={rocket.flickr_images[0]} alt="rocket image" />
+              <Image
+                src={rocket.flickr_images[0]}
+                alt="rocket image"
+                width={800}
+                height={500}
+              />
             </div>
           );
         })
