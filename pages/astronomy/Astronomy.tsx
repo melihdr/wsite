@@ -16,7 +16,9 @@ function Astronomy() {
       <h1 className="font-bold mb-3 text-2xl">Astronomy Picture of the Day</h1>
       <h1 className="font-bold">{data?.title}</h1>
       <p>{data?.explanation}</p>
-      {data?.media_type === "image" && <Image src={data.url} alt="image" />}
+      {data?.media_type === "image" && (
+        <Image src={data.url} alt="image" width={800} height={500} />
+      )}
       <p>
         <AiOutlineCopyright className="inline" />
         {data?.copyright}
