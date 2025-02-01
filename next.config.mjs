@@ -7,6 +7,7 @@ const nextConfig = {
       "farm1.staticflickr.com",
       "farm5.staticflickr.com",
       "rickandmortyapi.com",
+      "live.staticflickr.com",
     ],
   },
 };
